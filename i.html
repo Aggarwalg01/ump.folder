@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>web wisdom</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #91BAD6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #91BAD6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #2E5984;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 8 8px;
+        }
+
+        .card {
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .imagecenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <ul>
+        <li><img src="logo.jpeg" alt="" width="40px"></li>
+        <li><a class="active" href="#home"><h2>Home</h2></a></li>
+        <li><a href="#currency"><h2>Currency</h2></a></li>
+        <li><a href="#about1"><h2>About</h2></a></li>
+        <li><a href="#contact1"><h2>Contact</h2></a></li>
+        <li style="float:right"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li style="float:right"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+    </ul>
+
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="https://live.staticflickr.com/65535/52704059864_7d5d4e6080_b.jpg" alt="Los Angeles" width = "100%">
+            </div>
+
+            <div class="item">
+                <img src="https://live.staticflickr.com/65535/52704225655_0bf4a277b3_b.jpg" alt="Chicago"width = "100%">
+            </div>
+            <div class="item">
+                <img src="https://live.staticflickr.com/65535/52704288763_4e0cb8691f_b.jpg" alt="Chicago"width = "100%">
+            </div>
+            <div class="item">
+                <img src="https://live.staticflickr.com/65535/52704298263_6979892fc9_b.jpg" alt="Chicago"width = "100%">
+            </div>
+            <div class="item">
+                <img src="https://live.staticflickr.com/65535/52704234655_286f6f8686_b.jpg" alt="Chicago"width = "100%">
+            </div>
+            <div class="item">
+                <img src="https://live.staticflickr.com/65535/52703814116_48d3f767d5_b.jpg" alt="Chicago"width = "100%">
+            </div>
+
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+ 
+
+    <h2 style=" margin-top: 35px; text-align:center ">Our Team</h2>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="https://live.staticflickr.com/65535/52704251540_fd94db607e.jpg" alt="Muskan"
+                    class="imagecenter" style="width:300px ;">
+                <div class="container">
+
+                    <h2>Muskan Aggarwal</h2>
+                    <p class="title">Team Member 1</p>
+                    <p>maggarwalg01@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="column">
+            <div class="card">
+                <img class="imagecenter" src="https://live.staticflickr.com/65535/52703312062_1e1c64101d_o.png"
+                    alt="Muskan" style="width:300px ;">
+                <div class="container">
+                    <h2>Mridhul Gupta</h2>
+                    <p class="title">Team Member 2</p>
+                    <p>Mridhulgupta02@icloud.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+    </div>
+    <div class="container" id="contact1" style=" margin-top: 50px; ">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+
+                <img src="https://live.staticflickr.com/65535/52703304837_6e21401104_z.jpg"
+                    style="width: 100%; height: 50%;">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about1" style="margin-top: 50px;">
+        <h1>About Us </h1>
+
+        <br>
+        <p><h3>What we do </h3><br>
+            <h5>A Gift Card looks and works like a Debit Card, but it is preloaded with certain amount of money by the one who gifts it. 
+            The receiver of the Gift Card can then spend the prepaid amount on a number of electronic payment purchases made online or in retail shops.
+            </h5>
+            <br>
+            <h2>How Does A Gift Card Work</h2>
+            <h5>A Gift Card looks and works like a Debit Card, but it is preloaded with certain amount of money by the one who gifts it. The receiver of the Gift Card can then spend the prepaid amount on a number of electronic payment purchases made online or in retail shops.</h5>
+        </p>
+        <!-- p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione exercitationem, voluptatibus soluta, et quae
+            magnam corrupti dolores amet quod, tenetur velit! Quia sunt perferendis, a aliquid rerum officia amet sed!
+        </p> -->
+        <!-- <p>Resize the browser window to see that this page is responsive by the way.</p> -->
+    </div>
+
+</body>
+
+</html>
